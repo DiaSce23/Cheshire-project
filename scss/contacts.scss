@@ -1,0 +1,148 @@
+div.contacts {
+    width: 100%;
+    height: 573px;
+    background: $orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 36px;
+        line-height: 43px;
+        color: $text_bg;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+        color: $text_bg;
+    }
+
+    .table {
+        width: 390px;
+        height: 314px;
+        background: $text_bg;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 27px;
+        box-shadow: 0px 5px 6px $dark;
+        border-radius: 5px;
+
+        .table_in {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 33px;
+            margin-top: 33px;
+            color: #D8D8D8;
+
+            input {
+                width: 260px;
+                border: none;
+                border-bottom: 2px solid #D8D8D8;
+            }
+        }
+
+        .table_radio {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 9px;
+            line-height: 27px;
+            margin: 20px 120px 20px 0;
+
+            input {
+                appearance: none;
+                border-radius: 100%;
+                width: 14px;
+                height: 14px;
+
+                border: 2px solid $green;
+                transition: 0.2s;
+                margin-right: 5px;
+                margin-left: 10px;
+
+                position: relative;
+                margin-bottom: 2px;
+            }
+
+            input[type="radio"]:checked+label {
+                font-weight: bold;
+            }
+
+            input:checked {
+                border: 2px solid $green;
+                background: $text_bg;
+
+                &:after {
+                    content: "";
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 10px;
+                    margin: 2px 2.1px;
+                    position: absolute;
+                    background: $green;
+                }
+            }
+        }
+
+        button {
+            height: 48px;
+            width: 158px;
+            color: $text_bg;
+            background: $green;
+            border: none;
+            border-radius: 10px;
+
+            &:hover {
+                background: $orange;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        width: 100%;
+
+
+        h1 {
+            width: 80%;
+            text-align: center;
+        }
+
+        p {
+            width: 80%;
+            text-align: center;
+        }
+
+        .table {
+            width: 100px;
+            margin-bottom: 20px;
+
+            .table_in {
+                input {
+                    width: 15%;
+                }
+
+            }
+
+            .table_radio {
+                margin: 20px 0 20px 0;
+            }
+
+            button {
+                width: 80%;
+                height: 20%;
+                font-size: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

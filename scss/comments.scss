@@ -1,0 +1,151 @@
+div.comments {
+    height: 591px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 36px;
+        line-height: 43px;
+        text-align: left;
+        margin-top: 80px;
+    }
+
+    .line {
+        height: 2px;
+        width: 64px;
+        background: $comments;
+        align-self: center;
+        margin: 31px 0 60px 0;
+    }
+
+    .slidesContainer {
+        .slide1, .slide2, .slide3, .slide4 {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin-top: auto;
+            position: relative;
+            .comment {
+                p {
+                    width: 273px;
+                    font-size: 16px;
+                    line-height: 22px;
+                    background: $comments;
+                    color: $text_bg;
+                    border-radius: 8px 8px 8px 8px;
+                    padding: 20px 21px 20px 22px;
+                }
+            }
+
+            .triangle {
+                width: 0; 
+                height: 0; 
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid $comments;
+                border-radius: 2px 2px 2px 2px;
+                margin-left: 25px;
+                margin-bottom: 10px;
+            }
+
+            .user_pic{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: start;
+                margin-bottom: 12px;
+                margin-top: 180px;
+
+                img{
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%; // Pakeiskite pagal poreikį
+                    align-items: flex-start;
+                    margin-top: -280px;
+                }
+
+                .about_user{
+                    margin-left: 10px;
+                    margin-top: -280px;
+
+                    h2 {
+                        font-size: 20px;
+                        line-height: 24px;
+                        font-weight: 500;
+                        color: #333333;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 16.8px;
+                        color: #86878B;
+                        
+                    }
+                }
+
+            }
+        }
+    }
+
+    .swiper1 {
+        width:100%;
+        height: 500px;
+        overflow: hidden;
+
+        .swiper-wrapper {
+            display: flex;
+             align-items: center;
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    .swiper-pagination1 {
+        position: relative;
+        top: -20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-pagination-bullet {
+        background: none;
+        opacity: 1;
+        border: 1px solid $green;
+        width: 10px;
+        height: 10px;
+        margin-left: 20px !important;
+
+    }
+
+    .swiper-pagination-bullet-active {
+        background: $green;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (min-width: 1155px) {
+    .swiper1 {
+      width: 80%;
+      max-width: 1155px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    
+        .swiper1 {
+            width: 50%;
+          }
+        div.slides { .swiper-pagination1 {
+              top: -40px;
+          }
+    }
+    
+  }

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheshire</title>
+    <link rel="website icon" type="png" href="app/images/logo.png" />
+    <link rel="stylesheet" href="app/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- ---------------------------------------------------------------menu------------------------------------------------------------------ -->
+    <div class="start">
+      <nav>
+        <nav class="menu">
+          <a href="#"><img src="app/images/logo.png" alt="cheshire" /></a>
+          <div class="menu_a">
+            <a class="menu_link" href="#features">Features</a>
+            <a class="menu_link" href="#about">About</a>
+            <a class="menu_link" href="#pricing">Pricing</a>
+            <a class="menu_link" href="#reviews">Reviews</a>
+            <a class="menu_link" href="#contact">Contact</a>
+          </div>
+          <a id="burger"><i class="fa-solid fa-bars"></i></a>
+        </nav>
+        <nav class="mobile_menu">
+          <a class="mobile_menu_link" href="#features">Features</a>
+          <a class="mobile_menu_link" href="#about">About</a>
+          <a class="mobile_menu_link" href="#pricing">Pricing</a>
+          <a class="mobile_menu_link" href="#reviews">Reviews</a>
+          <a class="mobile_menu_link" href="#contact">Contact</a>
+        </nav>
+      </nav>
+      <!-- -----------------------------------------------------------------about------------------------------------------------------------------ -->
+      <div class="about">
+        <div class="container">
+          <img src="app/images/logo.svg" alt="cheshire" />
+          <h1>Explaines propriety of out perpetual to you</h1>
+          <img class="whiteLine" src="app/images/white_lineS.png" />
+          <p>
+            Insipidity the sufficien discretion imprudence resolution sir him
+            decisively. Proceed how any engaged visitor. Explained propriety of
+            out prepetual his you. Feel solid off felt nay rose met you. We so
+            entreaties cultivated astonisged is.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+            architecto ex neque nemo saepe? Quos dolor itaque voluptas illo
+            porro.
+          </p>
+          <button id="download">DOWNLOAD</button>
+        </div>
+        <!-- --------------------------------------------------------------about_table---------------------------------------------------------------- -->
+        <div class="table">
+          <div class="table_box">
+            <h2>Try Your <span>FREE </span>Trial Today</h2>
+            <h3>Your details</h3>
+            <div class="box_input">
+              <input type="text" placeholder="First name" autocomplete="off" />
+              <input type="text" placeholder="Last name" autocomplete="off" />
+              <input
+                type="text"
+                placeholder="Phone number"
+                autocomplete="off" />
+            </div>
+            <p>Type of subscription</p>
+            <div class="radio">
+              <input type="radio" checked />
+              <label for="monthly">MONTHLY</label>
+              <input type="radio" />
+              <label for="yearly">YEARLY</label>
+            </div>
+            <button id="getStarted">GET STARTED</button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="table">
+        <div class="table_box">
+          <h2>Try Your <span>FREE</span> Trial Today</h2>
+          <h3>Your details</h3>
+          <div class="box_input">
+            <input type="text" placeholder="First name" autocomplete="off" id="first-name" />
+            <input type="text" placeholder="Last name" autocomplete="off" id="last-name" />
+            <input type="text" placeholder="Phone number" autocomplete="off" id="phone-number" />
+            <span class="error-message" id="name-error">Please enter your name</span>
+            <span class="error-message" id="phone-error">Please enter a valid phone number</span>
+          </div>
+          <p>Type of subscription</p>
+          <div class="radio">
+            <input type="radio" name="subscription" id="monthly" checked />
+            <label for="monthly">MONTHLY</label>
+            <input type="radio" name="subscription" id="yearly" />
+            <label for="yearly">YEARLY</label>
+          </div>
+          <button id="getStarted">GET STARTED</button>
+        </div>
+      </div> -->
+      <!-----------------------------------------------------------------------tabs--------------------------------------------------------------------- -->
+      <div class="tabs">
+        <div class="tab_btn">
+          <button
+          class="tab_link"
+          id="tab"
+          onclick="openTab(event, 'register')">
+          <span id="">REGISTER</span>
+        </button>
+        <button class="tab_link" onclick="openTab(event, 'apply')">
+          <span id="">APPLY</span>
+        </button>
+        <button class="tab_link" onclick="openTab(event, 'receive')">
+          <span id="">RECEIVE</span>
+        </button>
+      </div>
+      
+      <div id="register" class="tab_cont">
+        <div class="tab_text">
+          <h1>
+            Tabs with soft transitioning effect. Explained propriety of out
+            prepetual his you.
+          </h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+            impedit voluptas natus nisi accusantium fugit vero, et
+            perspiciatis possimus, exercitationem laudantium assumenda sed
+            odit veniam adipisci dolores inventore blanditiis ad pariatur
+            perferendis! Reiciendis laborum cum quae cupiditate ipsum ex
+            itaque. <br />
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            neque recusandae ducimus.
+          </p>
+        </div>
+        <div class="tab_pic">
+          <div class="pic1_2">
+            <img src="app/images/pic_salat.png" alt="photo1" />
+            <img src="app/images/pic_vegetables.png" alt="photo2" />
+          </div>
+          <div class="pic3">
+            <img src="app/images/run_st.png" alt="photo3" />
+          </div>
+        </div>
+      </div>
+      <div id="apply" class="tab_cont">
+        <div class="tab_text">
+          <h1>APPLY</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+            impedit voluptas natus nisi accusantium fugit vero, et
+            perspiciatis possimus, exercitationem laudantium assumenda sed
+            odit veniam adipisci dolores inventore blanditiis ad pariatur
+            perferendis! Reiciendis laborum cum quae cupiditate ipsum ex
+            itaque. <br />
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            neque recusandae ducimus.
+          </p>
+        </div>
+        <div class="tab_pic">
+          <div class="pic1_2">
+            <img src="app/images/pic_salat.png" alt="photo1" />
+            <img src="app/images/pic_vegetables.png" alt="photo2" />
+          </div>
+          <div class="pic3">
+              <img src="app/images/run_st.png" alt="photo2" />
+            </div>
+          </div>
+        </div>
+        <div id="receive" class="tab_cont">
+          <div class="tab_text">
+            <h1>RECEIVE</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+              impedit voluptas natus nisi accusantium fugit vero, et
+              perspiciatis possimus, exercitationem laudantium assumenda sed
+              odit veniam adipisci dolores inventore blanditiis ad pariatur
+              perferendis! Reiciendis laborum cum quae cupiditate ipsum ex
+              itaque. <br />
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              neque recusandae ducimus.
+            </p>
+          </div>
+          <div class="tab_pic">
+            <div class="pic1_2">
+              <img src="app/images/pic_salat.png" alt="photo1" />
+              <img src="app/images/pic_vegetables.png" alt="photo2" />
+            </div>
+            <div class="pic3">
+              <img src="app/images/run_st.png" alt="photo2" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------------------------------------------------soc-media------------------------------------------------------------------ -->
+      <div class="soc-media">
+        <div class="soc_cont">
+          <h3>Social media</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            perspiciatis assumenda exercitationem eaque illo veniam sapiente
+            magni itaque alias odit.
+          </p>
+        </div>
+        <div class="media_icons">
+          <a href="#"><img src="app/images/1fb.png" alt="facebook" /></a>
+          <a href="#"><img src="app/images/1inst.png" alt="instagram" /></a>
+          <a href="#"><img src="app/images/1twit.png" alt="twitter" /></a>
+          <a href="#"><img src="app/images/1pint.png" alt="pinterest" /></a>
+          <a href="#"><i class="fa-solid fa-rss" style="color: #eca79b"></i></a>
+        </div>
+      </div>
+      <!-- -----------------------------------------------------------------------titles--------------------------------------------------------------------- -->
+      <div class="titles" id="title">
+        <div class="title_logo">
+          <img src="app/images/logo.png" alt="cheshire" />
+        </div>
+        
+        <div class="title_text">
+          <h2>Erat tempor tempus erat malesuda</h2>
+          <img src="app/images/orange_line.svg" alt="divider" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+            asperiores esse ab alias inventore. Perferendis doloremque ad quas
+            delectus
+          </p>
+          
+          <div class="title1">
+            <i class="fa-regular fa-eye"></i>
+            <div class="text">
+              <h3>Title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                repellendus dignissimos autem?
+              </p>
+            </div>
+          </div>
+
+          <div class="title2">
+            <i class="fa-regular fa-comment"></i>
+            <div class="text">
+              <h3>Title</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus sed dolores, explicabo accusamus, nam minus quisquam
+                itaque voluptatum iure cupiditate esse corrupti neque aliquam
+                porro totam vel maiores. Doloremque, inventore!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------------------------------why_awesome----------------------------------------------------------- -->
+      <div class="why_awesome">
+        <div class="why_cont">
+          <h1>WHY THIS IS AWESOME</h1>
+          <img src="app/images/short_orange_l.svg" alt="divider" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="why_">
+          <div class="design">
+            <i class="fa-solid fa-award"></i>
+            <h3>Thoughtful Design</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+              officiis explicabo rem?
+            </p>
+          </div>
+          <div class="crafted">
+            <i class="fa-solid fa-seedling"></i>
+            <h3>Well Crafted</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+              aspernatur et?
+            </p>
+          </div>
+          <div class="customize">
+            <i class="fa-brands fa-cc-visa"></i>
+            <h3>Easy to customize</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia?
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------------------------------------------------------pricing------------------------------------------------------------ -->
+      <div class="pricing" id="pricing">
+        <h2>PRICING OPTIONS</h2>
+        <img src="app/images/green_line.png" alt="divider" />
+        <p class="price_text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="three_pricings">
+          <div class="price_cont">
+            <div class="basic">
+              <div class="price0">
+                <h3>Basic</h3>
+                <h1><span>$</span>0</h1>
+                <p class="free">Free for Life</p>
+                <div class="price_menu"></div>
+                <p>1 GB OF SPACE</p>
+                <p>10GB OF BANDWIDTH</p>
+                <p>3 WEBSITES</p>
+                <p>BASIC CUSTOMIZATION</p>
+                <p>WORDPRESS INTEGRATION</p>
+                <p>EMAIL SUPPORT</p>
+              </div>
+            </div>
+            <div class="professional">
+              <div class="price19">
+                <h3>Professional</h3>
+                <h1><span>$</span>19</h1>
+                <p class="monthly">Monthly payment</p>
+                <div class="price_m">OUR MOST POPULAR</div>
+                <p>5 GB OF SPACE</p>
+                <p>50GB OF BANDWIDTH</p>
+                <p>12 WEBSITES</p>
+                <p>ADVANCED CUSTOMIZATION</p>
+                <p>WORDPRESS INTEGRATION</p>
+                <p>EMAIL SUPPORT</p>
+              </div>
+            </div>
+            <div class="enterprice">
+              <div class="price70">
+                <h3>Enterprise</h3>
+                <h1><span>$</span>70</h1>
+                <p class="monthly_pay">Monthly Payment</p>
+                <div class="price_menu"></div>
+                <p>UNLIMITED SPACE</p>
+                <p>UNLIMITED BANDWIDTH</p>
+                <p>100 WEBSITES</p>
+                <p>ADVANCED CUSTOMIZATION</p>
+                <p>WORDPRESS INTEGRATION</p>
+                <p>24/7 CUSTOMER SUPPORT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------------------------------------------comments-------------------------------------------------------------------- -->
+      <div class="comments" id="reviews">
+        <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
+        <div class="line"></div>
+        <div class="slidesContainer swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide1">
+                <div class="comment">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Similique, necessitatibus incidunt eveniet velit commodi
+                    alias impedit.
+                  </p>
+                </div>
+                <div class="triangle"></div>
+                <div class="user_pic">
+                  <img src="app/images/user_pic.png" alt="avatar" />
+                  <div class="about_user">
+                    <h2>Mr.B.</h2>
+                    <p class="type">Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide2">
+                <div class="comment">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Similique, necessitatibus incidunt eveniet velit commodi
+                    alias impedit.
+                  </p>
+                </div>
+                <div class="triangle"></div>
+                <div class="user_pic">
+                  <img src="app/images/user_pic.png" alt="avatar" />
+                  <div class="about_user">
+                    <h2>Mr.Werdo.</h2>
+                    <p class="type">Freelancer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide3">
+                <div class="comment">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque natus molestiae, perspiciatis sunt officiis ipsam
+                    nobis 1516546464+!
+                  </p>
+                </div>
+                <div class="triangle"></div>
+                <div class="user_pic">
+                  <img src="app/images/user_pic.png" alt="avatar" />
+                  <div class="about_user">
+                    <h2>John P.</h2>
+                    <p class="type">Photographer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide4">
+                <div class="comment">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore.
+                  </p>
+                </div>
+                <div class="triangle"></div>
+                <div class="user_pic">
+                  <img src="app/images/user_pic.png" alt="avatar" />
+                  <div class="about_user">
+                    <h2>Sim Vivi.</h2>
+                    <p class="type">Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide4">
+                <div class="comment">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore.
+                  </p>
+                </div>
+                <div class="triangle"></div>
+                <div class="user_pic">
+                  <img src="app/images/user_pic.png" alt="avatar" />
+                  <div class="about_user">
+                    <h2>Tom G.</h2>
+                    <p class="type">Student</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide4">
+                <div class="comment">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore.
+                  </p>
+                </div>
+                <div class="triangle"></div>
+                <div class="user_pic">
+                  <img src="app/images/user_pic.png" alt="avatar" />
+                  <div class="about_user">
+                    <h2>Mr. Puppy</h2>
+                    <p class="type">Food lover</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide4">
+                <div class="comment">
+                  <p>Don't ask WHY, just DO it!</p>
+                </div>
+                <div class="triangle"></div>
+                <div class="user_pic">
+                  <img src="app/images/user_pic.png" alt="avatar" />
+                  <div class="about_user">
+                    <h2>Same Old</h2>
+                    <p class="type">Love to sleep</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination1"></div>
+        </div>
+      </div>
+      <!-- ---------------------------------------------------------contacts----------------------------------------------------------- -->
+      <div class="contacts" id="contact">
+        <h1>CONTACT US</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="table">
+          <div class="table_in">
+            <input type="text" placeholder="First name" autocomplete="off" />
+            <input type="text" placeholder="Last name" autocomplete="off" />
+            <input type="text" placeholder="Phone number" autocomplete="off" />
+          </div>
+          <div class="table_radio">
+            <input type="radio" checked />
+            <label for="PERSONAL">PERSONAL</label>
+            <input type="radio" id="COMPANY" value="COMPANY" name="contact" />
+            <label for="COMPANY">COMPANY</label>
+          </div>
+          <button id="send">SEND</button>
+        </div>
+      </div>
+      <!-- -------------------------------------------------------------------the_end---------------------------------------------- -->
+      <div class="end">
+        <div class="icons">
+          <a href="#"><img src="app/images/1fb.png" alt="facebook" /></a>
+          <a href="#"><img src="app/images/1inst.png" alt="instagram" /></a>
+          <a href="#"><img src="app/images/1twit.png" alt="twitter" /></a>
+          <a href="#"><img src="app/images/1pint.png" alt="pinterest" /></a>
+          <a href="#"><i class="fa-solid fa-rss" style="color: #9e584d"></i></a>
+        </div>
+        <p>© 2023 Cheshire County</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
